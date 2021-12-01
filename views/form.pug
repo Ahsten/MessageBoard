@@ -1,0 +1,12 @@
+extends layout 
+
+block content
+    a(href="/") Back 
+    h1 New Message
+
+    form(method="POST" action="/new")
+        input(type="text" id="name" name="name" placeholder="Name")
+        br
+        input(type="text", id="message" name="message" placeholder="Enter a message")
+        br 
+        input(type="submit" value="Submit")

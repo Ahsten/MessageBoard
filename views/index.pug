@@ -3,3 +3,11 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  a(href='/new') New Message
+    
+  each message in messages
+    section.message-container     
+      h2= message.user
+      p #{message.text}
+      p Posted at #{message.added}  
